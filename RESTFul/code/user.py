@@ -4,3 +4,7 @@ class User:
         self.username = username
         self.password = password
 
+    @classmethod
+    def find_by_username(cls, username):
+        pass
+

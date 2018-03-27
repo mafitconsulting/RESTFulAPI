@@ -74,7 +74,7 @@ def get_item_in_store(name):
     for store in stores:
         if store['name'] == name:
             return jsonify({'items': store['items']})
-    return jsonify({'message': 'Item not found in store'})
+
 
 
 app.run(port=5000)
