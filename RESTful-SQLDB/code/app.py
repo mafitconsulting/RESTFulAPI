@@ -1,7 +1,8 @@
-from flask import Flask, request
+from flask import Flask
 from flask_restful import Resource, Api, reqparse
 from flask_jwt import JWT, jwt_required
 from security import authenticate, identity
+from user import UserRegister
 
 app = Flask(__name__)
 app.secret_key = 'markf'
@@ -65,5 +66,6 @@ class ItemList(Resource):
 
 api.add_resource(Item, '/item/<string:name>')  # http://127.0.0.1:5000/item/<name>
 api.add_resource(ItemList, '/items')
+api.add_resource(UserRegister, '/register') # sign up endpoint
 
 app.run(port=5000, debug=True)  # debug for errors - html page
