@@ -1,13 +1,12 @@
 import datetime
-
 from flask import Flask
-from flask import jsonify
-from flask_jwt import JWT
 from flask_restful import Api
-
-from resources.item import Item, ItemList
-from resources.user import UserRegister
+from flask_jwt import JWT
 from security import authenticate, identity
+from user import UserRegister
+from item import Item, ItemList
+from flask import jsonify
+
 
 app = Flask(__name__)
 app.secret_key = 'markf'

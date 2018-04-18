@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../RESTFul/.idea/RESTFul.iml" filepath="$PROJECT_DIR$/../RESTFul/.idea/RESTFul.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RESTful-SQLDB.iml" filepath="$PROJECT_DIR$/.idea/RESTful-SQLDB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../cicd/.idea/cicd.iml" filepath="$PROJECT_DIR$/../../cicd/.idea/cicd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ReSTful-SQLAlchemy/.idea/ReSTful-SQLAlchemy.iml" filepath="$PROJECT_DIR$/../ReSTful-SQLAlchemy/.idea/ReSTful-SQLAlchemy.iml" />
+      <module fileurl="file://C:\DEVOPS\Python\cicd\.idea\cicd.iml" filepath="C:\DEVOPS\Python\cicd\.idea\cicd.iml" />
     </modules>
   </component>
 </project>

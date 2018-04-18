@@ -1,6 +1,6 @@
 from werkzeug.security import safe_str_cmp  # flask safe way of comparing strings
+from user import User
 
-from resources.user import User
 
 
 def authenticate(username, password):
