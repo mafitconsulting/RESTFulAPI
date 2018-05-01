@@ -5,6 +5,7 @@ from flask_jwt import JWT
 from security import authenticate, identity
 from resources.user import UserRegister
 from resources.item import Item, ItemList
+from resources.store import Store, StoreList
 from flask import jsonify
 
 app = Flask(__name__)
@@ -31,6 +32,8 @@ def customized_reposnse_handler(access_token, identity):
 api.add_resource(Item, '/item/<string:name>')  # http://127.0.0.1:5000/item/<name>
 api.add_resource(ItemList, '/items')  # Get all items
 api.add_resource(UserRegister, '/register')  # sign up endpoint
+api.add_resource(Store, '/store/<string:name>')
+api.add_resource(StoreList, '/stores')
 
 if __name__ == '__main__':  # when you run a file its __main__
     from db import db
